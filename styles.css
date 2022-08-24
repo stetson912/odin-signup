@@ -1,8 +1,56 @@
+@font-face {
+    font-family:"Norse";
+    src: url('./Norse-Bold.otf');
+    font-weight: 700;
+}
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-:root{
 
+body{
+    display:flex;
 }
+
+
+.hero{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    background-image: url('./halie-west-25xggax4bSA-unsplash.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 100vh;
+    font-family: Norse,sans-serif;
+    color: white;
+}
+.hero p{
+    margin-top: auto;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+}
+.logo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 6em;
+    margin-top:auto;
+}
+.logo img{
+    width: 200px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
