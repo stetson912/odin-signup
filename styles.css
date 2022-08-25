@@ -21,7 +21,7 @@ body{
     background-image: url('./halie-west-25xggax4bSA-unsplash.jpg');
     background-size:cover;
     background-repeat: no-repeat;
-    width: 50vw;
+    width: 33%;
     height: 100vh;
     font-family: Norse,sans-serif;
     color: white;
@@ -44,6 +44,86 @@ body{
 .logo img{
     width: 200px;
     height: auto;
+}
+
+.form-container{
+    display:flex;
+    flex-direction:column;
+    width: 67%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.form-container h2{
+    margin: 1em 0 1em 2em;
+}
+
+.form-info{
+    background-color: #f5f5f5;
+    font-size: 1.5em;
+    padding: 4em 3em 1.5em 1.5em;
+}
+.form-info p:last-child{
+    margin-top: 1.5em;
+}
+.form-wrapper{
+    position:relative;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0,0.125);
+}
+.signup{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 2em;
+    
+    
+}
+.signup .group{
+    border: none;
+    margin-left: 3em;
+}
+label{
+    display:flex;
+    flex-direction: column;
+    font-size: .75em;
+}
+
+.signup input{
+    margin-bottom: 1.5em;
+    border-radius: 5px;
+    border: 1px solid #e5e7eb;
+}
+
+.signup input:focus{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    border: 3px solid rgb(0, 0, 255,0.5);
+}
+
+.signup .error input, .signup .error input:focus{
+    border: 3px solid red;
+    margin-bottom: 0;
+}
+
+
+.signup .error::after{
+    content:"*Passwords do not match.";
+    color: red;
+    font-size: 1em;
+}
+
+.form-submit{
+    background-color: #f5f5f5;
+    padding:1em 0 0 3em;
+    height: 100%;
+    
+}
+
+.form-button{
+    padding: .75em 2.5em;
+    color: white;
+    border-radius: 5px;
+    background-color: #596D48;
+    margin-bottom: 2em;
 }
 
 

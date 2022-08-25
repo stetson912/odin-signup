@@ -14,6 +14,69 @@
       </div>
       <p>Photo by Halie West on Unsplash</p>
     </section>
-    <section class="form-container"></section>
+
+    <section class="form-container">
+      <div class="form-info">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em>
+          to get started.
+        </p>
+        <p>You <em>know</em> you want too.</p>
+      </div>
+
+      <div class="form-wrapper">
+        <h2>Let's do this!</h2>
+
+        <form action="#" class="signup">
+          <fieldset class="group">
+            <label>
+              FIRST NAME
+              <input type="text" name="firstName" id="firstName" />
+            </label>
+
+            <label>
+              EMAIL
+              <input type="email" name="email" id="email" />
+            </label>
+
+            <label class="error">
+              PASSWORD
+              <!-- pattern is for password: 6-13 chars 1uppercase 1 lowercase 1number -->
+              <input
+                type="password"
+                name="password"
+                id="password"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{4,8}$"
+              />
+            </label>
+          </fieldset>
+
+          <fieldset class="group">
+            <label>
+              LAST NAME
+              <input type="text" name="lastName" id="lastName" />
+            </label>
+
+            <label>
+              PHONE NUMBER
+              <input type="te." name="phone" id="phone" />
+            </label>
+
+            <label class="error">
+              PASSWORD CONFIRMATION
+
+              <input type="password" name="confirmation" id="confirmation" />
+            </label>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="form-submit">
+        <button type="submit" class="form-button">Create Account</button>
+        <p>Already have an account? Log in</p>
+      </div>
+    </section>
   </body>
 </html>
